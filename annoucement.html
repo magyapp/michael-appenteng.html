@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Gudea" rel="stylesheet">
+	<title>Angry Birds</title>
+	<style type="text/css">
+		body {
+		
+			background-color: white;
+			font-family: 'Gudea', sans-serif;
+			margin: 0;
+					}
+
+		@-webkit-keyframes spaceboots {
+			0% { -webkit-transform: translate(2px, 1px) rotate(0deg); }
+			10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
+			20% { -webkit-transform: translate(-3px, 0px) rotate(1deg);	 }
+			30% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
+			40% { -webkit-transform: translate(1px, -1px) rotate(1deg); }
+			50% { -webkit-transform: translate(-1px, 2px) rotate(-1deg); }
+			60% { -webkit-transform: translate(-3px, 1px) rotate(0deg); }
+			70% { -webkit-transform: translate(2px, 1px) rotate(-1deg); }
+			80% { -webkit-transform: translate(-1px, -1px) rotate(1deg); }
+			90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
+			100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
+				}
+	    .shake:hover,
+	    .shake:focus {
+	        -webkit-animation-name: spaceboots;
+	        -webkit-animation-duration: 0.8s;
+	        -webkit-transform-origin:50% 50%;
+	        -webkit-animation-iteration-count: infinite;
+	        -webkit-animation-timing-function: linear;
+			}
+
+
+		
+		
+		a {
+			text-decoration: none;
+			color: #22395e;
+			}
+		
+		.char {
+			width: 300px;
+			display: inline-block;
+			padding: 5px;
+			margin: 1px;
+			background: #e2bbba;
+			box-shadow: 3px 3px 3px #888888;
+		}
+		.char:hover{
+			box-shadow: 10px 10px 5px #888888;
+			margin: 10px;
+		}
+		#chars {
+			border-top: 1px solid #f2f3f4;
+			background-color: rgba(246, 244, 247,.1);
+
+		}
+		.image_over {
+			position: relative;
+			top: -20px;
+		}
+		.sdates {
+			position: relative;
+			right: -600px;
+			width: 100px;
+		}
+		.tick {
+			position: relative;
+			right: -600px;
+			width: 100px;
+		}
+		.sdates:hover{
+			background-color: #e5e6e8;
+			margin: 20px;
+			
+		}
+		.tick:hover{
+			background-color: #e5e6e8;
+			margin: 20px;
+			
+		}
+		/* Dropdown Button */
+		.dropbtn {
+   			background-color: #4CAF50;
+    		color: white;
+    		padding: 16px;
+    		font-size: 16px;
+    		border: none;
+    		cursor: pointer;
+			}
+
+		.dropdown {
+    		position: relative;
+    		display: inline-block;
+			}
+
+		.dropdown-content {
+   			display: none;
+   			position: absolute;
+    		background-color: #f9f9f9;
+    		min-width: 160px;
+    		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			}
+
+		.dropdown-content a {
+   			color: black;
+    		padding: 12px 16px;
+    		text-decoration: none;
+    		display: block;
+			}
+
+		.dropdown-content a:hover 
+			{background-color: #f1f1f1;
+			}
+
+		.dropdown:hover .dropdown-content {
+   			 display: block;
+			}
+
+		.dropdown:hover .dropbtn {
+    		background-color: #3e8e41;
+			}
+		.aboutpic {
+			float: right;
+		}
+		.aboutpic2 {
+			float: left;
+		}
+		
+		.aboutp {
+			text-align: justify;
+			line-height: 30px;
+		}
+		.aboutdiv {
+			background-color: #fcfdff;
+		}
+		.aboutpicone {
+			float: right;
+		
+		}
+		.head, .foot {
+			background: #f2f4f7;
+		}
+		.foot {
+			display: block;
+			text-align: center;
+
+		}
+
+		
+	</style>
+	
+</head>
+<body>
+	<header>
+		<div class="head">	
+			<!--drop down menu-->
+			<div class="dropdown">
+ 				<button class="dropbtn">Menu</button>
+  				<div class="dropdown-content">
+   				<a href="#">About Sony</a>
+    			<a href="#">Movies</a>
+   				<a href="#">Contact</a>
+  			</div>
+			</div>
+		</div>
+	</header>
+			<!--first image-->
+	<div>
+		<img src="allchar.jpg" width="100%">
+	</div>
+			<!--red image link-->
+	<div class="image_over">
+		<a href="trailer.html"><img class="shake" src="a18.jpg" width="500" height="100"></a>
+	</div>
+		
+		
+		<!--character description-->
+		<div id="chars">
+			<h2 id="standalone" >Meet the characters</h2>
+			
+			
+			<h2 class="char"><a class="inside" href="#">Mighty Eagle <br>Peter Dinklage</a></h2>
+			
+			
+			<h2 class="char"><a class="inside" href="#">Bomb <br>Danny McBride</a></h2>
+			
+			<h2 class="char"><a class="inside" href="#">Red <br>Jason Sudeikis</h2>
+			
+			<h2 class="char"><a class="inside" href="#">Eva the Birthday Mom <br>Kate McKinnon</a></h2>
+			<br>
+			
+			<h2 class="char"><a class="inside" href="#">Chuck <br>Josh Gad</a></h2>
+			
+			<h2 class="char"><a class="inside" href="#">Matilda <br>Maya Rudolp</a></h2>
+			
+			<h2 class="char"><a class="inside" href="#">Leonard <br>Bill Hader</a></h2>
+			
+		</div>
+		<div class="aboutdiv">
+			<img class="aboutpic" src="game.gif">
+			<p class="aboutp">
+				The Angry Birds Movie (or simply Angry Birds) is a 2016 Finnish-American 3D computer-animated action-adventure comedy film based on the video game series of the same name. It was directed by <a href="clay.jpg">Clay Kaytis</a> and <a href="fergal.jpg">Fergal Reilly</a> (in their directorial debuts) and written by <a href="jon.jpg">Jon Vitti</a>. The film was animated by Sony Pictures Imageworks, and stars <a href="jason.jpg">Jason Sudeikis</a>, <a href="josh.jpg">Josh Gad</a>, <a href="danny.jpg">Danny McBride</a>, <a href="maya.jpg">Maya Rudolph</a>, <a href="kate.jpg">Kate McKinnon</a>, <a href="sean.jpg">Sean Penn</a>, <a href="tony.jpg">Tony Hale</a>, <a href="keegan.jpg">Keegan-Michael Key</a>, <a href="bill.jpg">Bill Hader</a> and <a href="peter.jpg">Peter Dinklage</a>. It was released in the United States on May 20, 2016, received mixed reviews from critics and grossed over $349 million.
+			</p>
+			
+			<p class="aboutp">
+				On Bird Island, an island inhabited by flightless birds, the reclusive Red is sentenced to anger management classes after his temper causes a "premature hatching" of a customer's egg. Resentful, Red avoids getting to know his classmates Chuck, Bomb, Terence and the instructor Matilda. One day, a boat docks at the island's shore. It carries green-colored pigs, who claim to be peaceful explorers bringing offerings of friendship, and are accepted on the island. They introduce the birds to innovative technologies such as slingshots and helium balloons.<br>
+				<img class="aboutpic2" src="red.gif">
+				More pigs arrive and seemingly adjust to bird society, but Red becomes suspicious of their motives, as they slowly overwhelm the island. He recruits Chuck and Bomb to help him find Mighty Eagle, a giant bald eagle said to be the protector of the island, and the only bird that can fly, but who has not been seen for many years. They find him on top of Bird Mountain, but Mighty Eagle is now overweight, self-absorbed, and largely in retirement. Looking through the Mighty Eagle's binoculars, Red's group sees the pigs planting explosives around the island while the birds are at a rave party. They realize the party was a ruse to steal the birds' eggs. Red, Bomb and Chuck attempt to warn the other birds and stop the pigs, but the pigs escape and their explosives destroy the village. When the birds realize what happened, Red rallies them to let loose their anger and take back their eggs.
+
+				<img class="aboutpicone" src="fight.gif">
+				The birds construct a boat and sail to Piggy Island, where they find the pigs living in a walled city. Deducing the eggs are most likely in the central castle of the city, the birds (including Stella, Hal, and Bubbles who have smallish parts) attack and defeat the pigs by firing themselves over the walls using their gifted giant slingshot. However, when Terrence attempts to launch himself into the city, he accidentally snaps the slingshot after pulling himself too far back. Meanwhile, Red, Chuck, and Bomb make it to the castle and find the eggs in a boiler room, where the pigs plan to cook and eat them. Mighty Eagle arrives, having watched these events through his binoculars and had a change of heart, and carries the eggs out. As the birds escape, one egg falls out and rolls back into the castle. Red battles the pigs' king Leonard and retrieves the egg, escaping as the pigs' reserve of explosives blow up and destroy Piggy Island. Red reunites with the other birds as the rescued egg hatches, revealing three little blue birds (The Blues), and is declared a hero. He, Chuck, and Bomb are approached by Mighty Eagle, who claims that he wasn't lazy but instead deliberately made the birds lose faith in him so they could find faith in themselves. Back on Bird Island, the birds rebuild Red's house, which had been moved by Red near the edge of the island and was eventually destroyed whenever a boat full of pigs had arrived, all the birds that have hatched sing a song to Red to thank him, and Red lets Chuck and Bomb move in with him.<br>
+
+				
+				During the credits, it is revealed that some of the pigs survived Piggy Island's destruction and have begun to hatch a new plan to steal the eggs, while a mid-credits scene reveals that the three blue birds that Red rescued use a rebuilt slingshot to launch themselves out to sea.
+			</p>
+
+		</div>
+	<footer>
+		<div class="foot">
+			<h4 class="sdates"><a href="#">Movie Dates</a></h4>
+			<h4 class="tick"><a href="#">Tickets</a></h4>
+		</div>
+	</footer>
+</body>
+</html>
